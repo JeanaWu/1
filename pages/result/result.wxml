@@ -1,0 +1,14 @@
+<view class="whole">
+<view class="a">经测试，您的智力区间在{{iq}} </view>
+<view class="b">智力等级为{{des}}</view>
+<view class="detail">
+<view>反映直觉辨别能力得分：{{A}}</view>
+<view>反映同类比较能力得分：{{B}}</view>
+<view>反映比较推理能力得分：{{C}}</view>
+<view>反映系列关系能力得分：{{D}}</view>
+<view>反映抽象推理能力得分：{{E}}</view>
+<view class="userbutton">
+    <button bindtap="begin">重新开始测试</button>
+  </view>
+</view>
+</view>

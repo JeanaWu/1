@@ -1,0 +1,69 @@
+page {
+  background-color:white	;
+}
+.content{
+
+ 
+  width:100%;
+  height:100%;
+ } 
+ /*标题*/
+ .notice {
+  text-align: left;
+  text-indent: 30px;
+  font-family: '幼圆';
+  font-size: 15px;
+  margin: 10px 10px;
+  border-radius: 8px;
+  width:95%;
+  height:40px;
+}
+/*题目所处的view的格式*/
+.question{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+}
+/*题目截图格式*/
+.pic{
+   font-family: "幼圆";
+   border-radius: 10px;
+   
+   /*#E6E6FA*/
+}
+/*答案选项截图*/
+.answerPic {
+   height:50px;
+   width:100%;
+   font-family: "幼圆";
+   border-radius: 10px;
+    border: solid 2px #E6E6FA;    
+}
+/*单选按钮所处的view格式*/
+.A{
+   width: 98%;
+}
+/*将选项序号和选项图片水平布局*/
+.cont{
+  display: flex;  
+  flex-direction: row;  
+  margin-top: 10px;
+}
+/*ABCDE格式*/
+.option{
+  font-size: 15px;
+  height: 23.5px;
+  width: 33px;
+  margin-top: 1px;
+  margin-right: 7px;
+  margin-left: 7px;
+  text-align: center;
+  padding-top: 2.5px;
+  border-radius: 50%;
+  border: solid 0.7px #006400;
+}
+text{
+  color: #0000CD;
+  font-weight: bold;
+}

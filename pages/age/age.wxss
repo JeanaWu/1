@@ -1,0 +1,8 @@
+/* pages/age/age.wxss */
+.page{
+  background-color:white
+}
+
+.radio-group{
+  margin-top:20px;
+}

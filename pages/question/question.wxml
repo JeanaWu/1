@@ -1,0 +1,20 @@
+<view class="content">
+  <!--题目框-->
+ 
+    <view class="question">
+  
+      <image src="{{question}}"  bindload='imageLoad' style="width:{{imageWidth}}rpx; height:{{imageHeight }}rpx;" class="pic" mode="aspectFit"></image>
+    </view>
+   <!--选项-->
+    <view>
+   
+    <view wx:for="{{items}}" class="A" >
+      
+    <view  >
+       <image src="{{item[0]}}" class="answerPic" data-text="{{item[1]}}" bindtap='nextByView' ></image>
+    </view>
+      
+    </view>
+  
+  </view>
+</view>

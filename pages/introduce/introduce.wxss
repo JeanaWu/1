@@ -1,0 +1,9 @@
+/* pages/introduce/introduce.wxss */
+
+
+.radio{
+  margin-top:20px;
+}
+.title{
+  padding-top:20px;
+}

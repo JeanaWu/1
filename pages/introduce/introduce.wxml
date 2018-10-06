@@ -1,0 +1,5 @@
+<view class="whole"> 
+<view class="title"> 1.指导语</view>
+<view class="context">以下每个题目都有一定的主题，但每张大的主题图中都缺少一部分，请从每题下面所给出的小图片中找出最适合大图的一张，使整个图案合理与完整</view>
+<radio class= "radio" bindtap="begin">我知道了</radio> 
+</view>
