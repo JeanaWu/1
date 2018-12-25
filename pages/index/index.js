@@ -63,7 +63,11 @@ Page({
 begin: function(){     //开始训练，加载题目按钮跳转事件
 for (var i = 0; i < 60; i++) {
     getApp().globalData.problem[i].items = [];//选项清空
+  console.log(getApp().globalData.problem[i].items);
     }
+
+
+    
     wx.request({
       url: 'https://gaoyuxuan.club/IQTest/SelectIQQuestion',//获取服务器数据
       header: {

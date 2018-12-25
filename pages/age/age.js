@@ -100,12 +100,21 @@ Page({
   radioChange: function (e) {
    // console.log('radio发生change事件，携带value值为：', e.detail.value)
    //获取答题年龄
-   
+    
       getApp().globalData.age= e.detail.value;
    //跳转做题界面
       wx.navigateTo({
       url: '../question/question',
-      success: function (res) { },
+      success: function (res) { 
+        //清空之前的答题数据
+        getApp().globalData.rightnum = 0
+        getApp().globalData.rightA = 0
+        getApp().globalData.rightB = 0
+        getApp().globalData.rightC = 0
+        getApp().globalData.rightD = 0
+        getApp().globalData.rightE = 0
+        getApp().globalData.key = 0
+      },
       fail: function (res) { },
       complete: function (res) { },
     })

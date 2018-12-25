@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数学章节测试后台管理系统</title>
+		<link rel="stylesheet" href="MyCss.css" type="text/css" />
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="MyJS.js"></script>
+	</head>
+	<body style='background: #FFFFFF'>
+		<!--导航栏-->
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">数学章节测验</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li id="checkQuestion"><a href="#">查找章节测试题</a></li>
+						<li id="amendQuestion"><a href="#">修改章节测试题</a></li>
+						<li id="deleteQuestion"><a href="#">删除章节测试题</a></li>
+						<li id="uploadQuestion"><a href="#">上传章节测试题</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--欢迎标语-->
+		<div class="welcome">
+			<label class="welcomeLabel">你好，欢迎使用数学章节测试后台管理系统</label>
+		</div>
+		
+		<!--查找章节测试题目-->
+		<div class="check divFont" hidden="true">
+			<form class="center">
+				<label class="labelFont">请输入要查找的题目关键字:</label><br/>
+				<input type="text" placeholder="题目关键字" class="inputFont" name="searchContent"/><br/>
+				<button class="btn" >确定</button>
+				<button class="btn">重置</button>
+			</form>
+		</div>
+		
+		<!--修改章节测试题目-->
+		<div class="amend divFont" hidden="true">
+			<form class="center">
+				<label class="labelFont">请输入要修改的题目关键字:</label><br/>
+				<input type="text" placeholder="题目关键字" class="inputFont" /><br/>
+				<button class="btn">确定</button>
+				<button class="btn">重置</button>
+			</form>
+		</div>
+		
+		<!--删除章节测试题目-->
+		<div class="delete divFont" hidden="true">
+			<form class="center">
+				<label class="labelFont">请输入要删除的题目关键字:</label><br/>
+				<input type="text" placeholder="题目关键字" class="inputFont" /><br/>
+				<button class="btn">确定</button>
+				<button class="btn">重置</button>
+			</form>
+		</div>
+		<!--上传章节测试题目-->
+		<div class="upload divFont" hidden="true">
+			<form class="center" action="uploadFile" method="post">
+				<label class="labelFont">请添加要上传的数学测试题:</label><br/>
+				<input type="file" class="uploadFont" />
+				<input type="submit" value="上传" id="upload" class="uploadBtn"/>
+			</form>
+		</div>
+	</body>
+</html>

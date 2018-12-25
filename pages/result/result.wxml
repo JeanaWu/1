@@ -1,5 +1,5 @@
 <view class="whole">
-<view class="a">经测试，您的智力区间在{{iq}} </view>
+<view class="a">经测试，您的智力范围为{{iq}} </view>
 <view class="b">智力等级为{{des}}</view>
 <view class="detail">
 <view>反映直觉辨别能力得分：{{A}}</view>

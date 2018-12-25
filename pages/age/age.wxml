@@ -1,7 +1,9 @@
+<view class="whole">
 <view>2.选择你的实际年龄？（请认真作答，测评结果将按年龄评定）</view>
 
 <radio-group class="radio-group" bindchange="radioChange">
-    <label class="radio" wx:for="{{items}}">
+    <label class="radio"  wx:for="{{items}}">
         <radio value="{{item.name}}"  checked="{{item.checked}}"/><text>{{item.value}}\n </text>
     </label>
 </radio-group>
+</view>

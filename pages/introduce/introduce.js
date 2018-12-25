@@ -63,7 +63,9 @@ Page({
   onShareAppMessage: function () {
     
   },
+  
   begin: function () {     //开始训练按钮跳转事件
+   //跳转年龄选择界面
     wx.navigateTo({
       url: '../age/age',
       success: function (res) { },
